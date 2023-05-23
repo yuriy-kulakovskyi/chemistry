@@ -1,0 +1,39 @@
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem 2rem; }
+  .intro__title {
+    font-size: 24px;
+    color: #333;
+    font-family: "Montserrat Alternates";
+    text-align: center; }
+    .intro__title span {
+      color: #0093E9;
+      font-family: "Montserrat Alternates"; }
+  .intro__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    margin-top: 40px; }
+    .intro__cards__card {
+      width: 100%;
+      padding: 10px 20px;
+      box-shadow: 0 0 5px #0093E9;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+      .intro__cards__card__title {
+        font-size: 20px;
+        color: #333;
+        font-family: "Montserrat Alternates"; }
+      .intro__cards__card__description {
+        font-size: 16px;
+        color: #333;
+        font-family: "Montserrat Alternates"; }
+  @media screen and (min-width: 768px) {
+    .intro__cards {
+      grid-template-columns: repeat(2, 1fr); } }
+
+/*# sourceMappingURL=Intro.css.map */

@@ -1,0 +1,42 @@
+@import "../../mixins.scss";
+@import "../../variables.scss";
+
+.main {
+  width: 100%; min-height: 60vh;
+  @include flex(column, center, flex-start);
+  padding: 20px 30px;
+
+  &__title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Montserrat Alternates";
+
+    span {
+      font-family: "Montserrat Alternates";
+      text-shadow: 0 0 3px $mainColor;
+      color: $mainColor;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Montserrat Alternates";
+  }
+
+  &__typed {
+    font-size: 24px;
+    font-weight: 600;
+    color: $mainColor;
+    margin-bottom: 20px;
+
+    span {
+      font-family: "Montserrat Alternates";
+      text-shadow: 0 0 2px $mainColor;
+    }
+  }
+}

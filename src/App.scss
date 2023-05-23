@@ -1,0 +1,25 @@
+// Montserrat Alternates import
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic');
+
+* {
+  padding: 0; margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 650px;
+  }
+
+  @media screen and (min-width: 992px) {
+    max-width: 900px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1100px;
+  }
+}

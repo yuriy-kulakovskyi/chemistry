@@ -1,0 +1,53 @@
+@import "../variables.scss";
+
+.intro {
+  width: 100%; min-height: 100vh;
+  padding: 1rem 2rem;
+
+  &__title {
+    font-size: 24px;
+    color: #333;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+
+    span {
+      color: $mainColor;
+      font-family: "Montserrat Alternates";
+    }
+  }
+
+  &__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px; margin-top: 40px;
+
+    &__card {
+      width: 100%;
+      padding: 10px 20px;
+      box-shadow: 0 0 5px $mainColor;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &__title {
+        font-size: 20px;
+        color: #333;
+        font-family: "Montserrat Alternates";
+      }
+
+      &__description {
+        font-size: 16px;
+        color: #333;
+        font-family: "Montserrat Alternates";
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

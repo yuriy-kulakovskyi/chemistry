@@ -1,0 +1,89 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.header {
+  width: 100%;
+  padding: 1rem 2rem;
+  @include flex(row, space-between, center);
+
+  &__logo {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+
+  &__nav {
+    &__close {
+      display: none;
+    }
+
+    &__list {
+      list-style-type: none;
+      @include flex(column, center, center);
+      gap: 1rem;
+
+      &__item {
+        a {
+          text-decoration: none;
+          font-family: "Montserrat Alternates", sans-serif;
+          font-size: 20px;
+          font-weight: 800;
+          color: #fff;
+
+          &:hover {
+            text-shadow: 0 0 10px #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__toggle {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__nav {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 30vh;
+      @include flex(column, flex-start, center);
+      padding: 1rem 2rem;
+      transition: all .3s ease-in-out;
+      background-color: $thirdColor;
+
+      &__close {
+        width: 100%;
+        @include flex(row, flex-end, center);
+        cursor: pointer;
+        margin-bottom: 2rem;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 800;
+
+        &:hover {
+          text-shadow: 0 0 4px #fff;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__nav__list {
+      display: flex;
+      @include flex(row, center, center);
+    }
+
+    &__nav__list__item a {
+      color: #333;
+
+      &:hover {
+        color: $mainColor;
+        text-shadow: 0 0 3px $mainColor;
+      }
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+}

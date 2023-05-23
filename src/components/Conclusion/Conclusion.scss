@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.footer {
+  width: 100%; min-height: 80vh;
+  margin-top: 80px;
+  padding: 10px 20px;
+
+  &__title {
+    font-family: "Montserrat Alternates";
+    text-align: center;
+    color: $mainColor;
+  }
+
+  &__subtitle {
+    font-family: "Montserrat Alternates";
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+}
